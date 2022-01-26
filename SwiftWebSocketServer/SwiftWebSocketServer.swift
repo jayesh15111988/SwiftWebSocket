@@ -149,6 +149,7 @@ class SwiftWebSocketServer {
                     if let id = message["unsubscribeFrom"] as? Int {
                         let connection = self.connectedClients.remove(at: id)
                         connection.cancel()
+                        connection.stateUpdateHandler = nil
                         print("Cancelled old connection with id \(id)")
                     } else {
                         print("Invalid Payload")
