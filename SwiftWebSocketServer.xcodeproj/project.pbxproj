@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		919A8E3827A00E6800B0731C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A8E3727A00E6800B0731C /* AppDelegate.swift */; };
+		919A8E3A27A00E6800B0731C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A8E3927A00E6800B0731C /* ViewController.swift */; };
+		919A8E3C27A00E6A00B0731C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 919A8E3B27A00E6A00B0731C /* Assets.xcassets */; };
+		919A8E3F27A00E6A00B0731C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 919A8E3D27A00E6A00B0731C /* Main.storyboard */; };
+		919A8E4627A00E9600B0731C /* SwiftWebSocketServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A8E4527A00E9600B0731C /* SwiftWebSocketServer.swift */; };
+		919A8E4A27A0299D00B0731C /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919A8E4927A0299D00B0731C /* NetworkExtension.framework */; };
+		919A8E5327A064C300B0731C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A8E5227A064C300B0731C /* AppDelegate.swift */; };
+		919A8E5527A064C300B0731C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A8E5427A064C300B0731C /* ViewController.swift */; };
+		919A8E5727A064C600B0731C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 919A8E5627A064C600B0731C /* Assets.xcassets */; };
+		919A8E5A27A064C600B0731C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 919A8E5827A064C600B0731C /* Main.storyboard */; };
+		919A8E5F27A066BA00B0731C /* SwiftWebSocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A8E5E27A066BA00B0731C /* SwiftWebSocketClient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		919A8E3427A00E6800B0731C /* SwiftWebSocketServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftWebSocketServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		919A8E3727A00E6800B0731C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		919A8E3927A00E6800B0731C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		919A8E3B27A00E6A00B0731C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		919A8E3E27A00E6A00B0731C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		919A8E4527A00E9600B0731C /* SwiftWebSocketServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWebSocketServer.swift; sourceTree = "<group>"; };
+		919A8E4727A0299C00B0731C /* SwiftWebSocketServer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftWebSocketServer.entitlements; sourceTree = "<group>"; };
+		919A8E4927A0299D00B0731C /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		919A8E4B27A0556400B0731C /* SwiftWebSocketServerDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftWebSocketServerDebug.entitlements; sourceTree = "<group>"; };
+		919A8E5027A064C300B0731C /* SwiftWebSocketClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftWebSocketClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		919A8E5227A064C300B0731C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		919A8E5427A064C300B0731C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		919A8E5627A064C600B0731C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		919A8E5927A064C600B0731C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		919A8E5E27A066BA00B0731C /* SwiftWebSocketClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWebSocketClient.swift; sourceTree = "<group>"; };
+		919A8E6027A074A800B0731C /* SwiftWebSocketClientDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftWebSocketClientDebug.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		919A8E3127A00E6800B0731C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919A8E4A27A0299D00B0731C /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919A8E4D27A064C300B0731C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		919A8E2B27A00E6800B0731C = {
+			isa = PBXGroup;
+			children = (
+				919A8E3627A00E6800B0731C /* SwiftWebSocketServer */,
+				919A8E5127A064C300B0731C /* SwiftWebSocketClient */,
+				919A8E3527A00E6800B0731C /* Products */,
+				919A8E4827A0299D00B0731C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		919A8E3527A00E6800B0731C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				919A8E3427A00E6800B0731C /* SwiftWebSocketServer.app */,
+				919A8E5027A064C300B0731C /* SwiftWebSocketClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		919A8E3627A00E6800B0731C /* SwiftWebSocketServer */ = {
+			isa = PBXGroup;
+			children = (
+				919A8E4B27A0556400B0731C /* SwiftWebSocketServerDebug.entitlements */,
+				919A8E4727A0299C00B0731C /* SwiftWebSocketServer.entitlements */,
+				919A8E3727A00E6800B0731C /* AppDelegate.swift */,
+				919A8E3927A00E6800B0731C /* ViewController.swift */,
+				919A8E3B27A00E6A00B0731C /* Assets.xcassets */,
+				919A8E3D27A00E6A00B0731C /* Main.storyboard */,
+				919A8E4527A00E9600B0731C /* SwiftWebSocketServer.swift */,
+			);
+			path = SwiftWebSocketServer;
+			sourceTree = "<group>";
+		};
+		919A8E4827A0299D00B0731C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				919A8E4927A0299D00B0731C /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		919A8E5127A064C300B0731C /* SwiftWebSocketClient */ = {
+			isa = PBXGroup;
+			children = (
+				919A8E6027A074A800B0731C /* SwiftWebSocketClientDebug.entitlements */,
+				919A8E5227A064C300B0731C /* AppDelegate.swift */,
+				919A8E5427A064C300B0731C /* ViewController.swift */,
+				919A8E5627A064C600B0731C /* Assets.xcassets */,
+				919A8E5827A064C600B0731C /* Main.storyboard */,
+				919A8E5E27A066BA00B0731C /* SwiftWebSocketClient.swift */,
+			);
+			path = SwiftWebSocketClient;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		919A8E3327A00E6800B0731C /* SwiftWebSocketServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 919A8E4227A00E6A00B0731C /* Build configuration list for PBXNativeTarget "SwiftWebSocketServer" */;
+			buildPhases = (
+				919A8E3027A00E6800B0731C /* Sources */,
+				919A8E3127A00E6800B0731C /* Frameworks */,
+				919A8E3227A00E6800B0731C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftWebSocketServer;
+			productName = SwiftWebSocketServer;
+			productReference = 919A8E3427A00E6800B0731C /* SwiftWebSocketServer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		919A8E4F27A064C300B0731C /* SwiftWebSocketClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 919A8E5B27A064C600B0731C /* Build configuration list for PBXNativeTarget "SwiftWebSocketClient" */;
+			buildPhases = (
+				919A8E4C27A064C300B0731C /* Sources */,
+				919A8E4D27A064C300B0731C /* Frameworks */,
+				919A8E4E27A064C300B0731C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftWebSocketClient;
+			productName = SwiftWebSocketClient;
+			productReference = 919A8E5027A064C300B0731C /* SwiftWebSocketClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		919A8E2C27A00E6800B0731C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					919A8E3327A00E6800B0731C = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					919A8E4F27A064C300B0731C = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 919A8E2F27A00E6800B0731C /* Build configuration list for PBXProject "SwiftWebSocketServer" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 919A8E2B27A00E6800B0731C;
+			productRefGroup = 919A8E3527A00E6800B0731C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				919A8E3327A00E6800B0731C /* SwiftWebSocketServer */,
+				919A8E4F27A064C300B0731C /* SwiftWebSocketClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		919A8E3227A00E6800B0731C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919A8E3C27A00E6A00B0731C /* Assets.xcassets in Resources */,
+				919A8E3F27A00E6A00B0731C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919A8E4E27A064C300B0731C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919A8E5727A064C600B0731C /* Assets.xcassets in Resources */,
+				919A8E5A27A064C600B0731C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		919A8E3027A00E6800B0731C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919A8E4627A00E9600B0731C /* SwiftWebSocketServer.swift in Sources */,
+				919A8E3A27A00E6800B0731C /* ViewController.swift in Sources */,
+				919A8E3827A00E6800B0731C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919A8E4C27A064C300B0731C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919A8E5527A064C300B0731C /* ViewController.swift in Sources */,
+				919A8E5327A064C300B0731C /* AppDelegate.swift in Sources */,
+				919A8E5F27A066BA00B0731C /* SwiftWebSocketClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		919A8E3D27A00E6A00B0731C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				919A8E3E27A00E6A00B0731C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		919A8E5827A064C600B0731C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				919A8E5927A064C600B0731C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		919A8E4027A00E6A00B0731C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		919A8E4127A00E6A00B0731C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		919A8E4327A00E6A00B0731C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftWebSocketServer/SwiftWebSocketServerDebug.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ABC.SwiftWebSocketServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		919A8E4427A00E6A00B0731C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftWebSocketServer/SwiftWebSocketServer.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ABC.SwiftWebSocketServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		919A8E5C27A064C600B0731C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftWebSocketClient/SwiftWebSocketClientDebug.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ABC.SwiftWebSocketClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		919A8E5D27A064C600B0731C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ABC.SwiftWebSocketClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		919A8E2F27A00E6800B0731C /* Build configuration list for PBXProject "SwiftWebSocketServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				919A8E4027A00E6A00B0731C /* Debug */,
+				919A8E4127A00E6A00B0731C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		919A8E4227A00E6A00B0731C /* Build configuration list for PBXNativeTarget "SwiftWebSocketServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				919A8E4327A00E6A00B0731C /* Debug */,
+				919A8E4427A00E6A00B0731C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		919A8E5B27A064C600B0731C /* Build configuration list for PBXNativeTarget "SwiftWebSocketClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				919A8E5C27A064C600B0731C /* Debug */,
+				919A8E5D27A064C600B0731C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 919A8E2C27A00E6800B0731C /* Project object */;
+}
